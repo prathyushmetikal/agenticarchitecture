@@ -1,12 +1,17 @@
+
+import sys, os
+print(">>> sys.path:", sys.path)
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from Tools.filereader import extract_cv_text
 
-filename="./Docs/just-text.pdf"
+filename="./Docs/Resume_prathyush.docx"
 text=extract_cv_text(filename)
 
 
 
 if __name__ == "__main__":
-    filename="./Docs/just-text.pdf"
+    filename="./Docs/Resume_prathyush.docx"
     text=extract_cv_text(filename)
     print(text)
 

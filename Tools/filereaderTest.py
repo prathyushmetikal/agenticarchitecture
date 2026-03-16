@@ -2,20 +2,20 @@ import os
 import docx
 import pdfplumber
 import subprocess
-from langchain.tools import tool
+#from langchain.tools import tool
 
-@tool
+#@tool
 def extract_cv_text(file_path)->str:
-    """
-    Extracts the text content from the resume file in pdf, docx or doc format . The resume should be inside the Docs folder .
+    # """
+    # Extracts the text content from the resume file in pdf, docx or doc format . The resume should be inside the Docs folder .
 
-    Args:
-    file_path : the local file path to the resume document e.g. "./Docs/just-text.pdf"
+    # Args:
+    # file_path : the local file path to the resume document e.g. "./Docs/just-text.pdf"
 
-    Returns:
-    str: the extracted plain text from the resume , or an error message if the format is unsupported or cannot be read.
+    # Returns:
+    # str: the extracted plain text from the resume , or an error message if the format is unsupported or cannot be read.
     
-    """
+    # """
     print(">>> Entering extract_cv_text")
     ext=os.path.splitext(file_path)[-1].lower()
 
